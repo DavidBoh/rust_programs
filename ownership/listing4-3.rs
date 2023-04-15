@@ -18,8 +18,8 @@ makes_copy(x); // x would move into the function,
 fn takes_ownership(some_string: String) { // some_string comes 
                                           // into scope
     println!("{some_string}");
-} // Here, some_Script goes out of scope and 
-  // ''drop' is called. 
+} // Here, some_string goes out of scope and 
+  // 'drop' is called. 
   // The backing memoery is freed. 
 
 fn makes_copy(some_int: i32) { // some_int comes into scope
